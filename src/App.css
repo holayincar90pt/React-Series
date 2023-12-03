@@ -1,5 +1,8 @@
 .App {
+  min-height: 100vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -35,4 +38,69 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App main {
+  background-color: aliceblue;
+  color: black;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App main ul {
+  margin-bottom: 3rem;
+  width: 40%;
+
+  border-radius: 50px;
+  list-style: none;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+}
+
+.App main ul li {
+  margin: 1rem 1rem 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.App main ul li div {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 50px;
+}
+
+.App main ul li button {
+  width: 100px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 1px 5px black;
+}
+
+.App main ul li label {
+  background-color: aliceblue;
+}
+
+.App header {
+  background-color: #61dafb;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App footer {
+  background-color: #61dafb;
+  width: 100%;
+  height: 40px;
+  display: grid;
+  place-content: center;
+  position: fixed;
+  bottom: 0;
 }
