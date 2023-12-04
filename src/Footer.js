@@ -1,10 +1,10 @@
 import React from "react";
+import { useState } from "react";
 
-const Footer = () => {
-  const today = new Date();
+const Footer = ({ lists }) => {
   return (
     <footer>
-      <p>&copy;Copyright{today.getFullYear()} Ccardozo. </p>;
+      <p></p>
     </footer>
   );
 };
